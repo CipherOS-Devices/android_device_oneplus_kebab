@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/revengeos_kebab.mk
+    $(LOCAL_DIR)/cipher_kebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    revengeos_kebab-user \
-    revengeos_kebab-userdebug \
-    revengeos_kebab-eng
+    cipher_kebab-user \
+    cipher_kebab-userdebug \
+    cipher_kebab-eng

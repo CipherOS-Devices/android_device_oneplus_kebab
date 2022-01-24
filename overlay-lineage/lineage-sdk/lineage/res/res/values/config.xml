@@ -29,7 +29,7 @@
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>com.revengeos.settings.slider_settings.KeyHandler</item>
+        <item>org.lineageos.settings.slider_settings.KeyHandler</item>
     </string-array>
 
     <!-- Hardware keys present on the device, stored as a bit field.

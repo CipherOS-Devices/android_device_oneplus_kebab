@@ -17,7 +17,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           android:sharedUserId="android.uid.system"
-          package="com.revengeos.device.DeviceSettings"
+          package="org.lineageos.device.DeviceSettings"
           android:versionCode="2"
           android:versionName="2.0" >
 
@@ -58,7 +58,7 @@
         <activity android:name=".DeviceSettings" />
 
         <receiver 
-            android:name="com.revengeos.device.DeviceSettings.Startup" 
+            android:name="org.lineageos.device.DeviceSettings.Startup" 
             android:enabled="true">
             <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -67,7 +67,7 @@
 
         <!-- DeviceSettings Tile -->
         <service
-            android:name="com.revengeos.device.DeviceSettings.DeviceSettingsTileService"
+            android:name="org.lineageos.device.DeviceSettings.DeviceSettingsTileService"
             android:icon="@drawable/ic_settings_device_qs"
             android:label="@string/device_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -80,7 +80,7 @@
 
          <!-- DC-Dimming Tile -->
         <service
-            android:name="com.revengeos.device.DeviceSettings.DCModeTileService"
+            android:name="org.lineageos.device.DeviceSettings.DCModeTileService"
             android:icon="@drawable/ic_dimming_off"
             android:label="@string/tile_dc_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -91,12 +91,12 @@
         </service>
 
         <!-- HBM Service -->
-        <service android:name="com.revengeos.device.DeviceSettings.HBMModeService"
+        <service android:name="org.lineageos.device.DeviceSettings.HBMModeService"
                  android:exported="false" />
 
         <!-- HBM Tile -->
         <service
-            android:name="com.revengeos.device.DeviceSettings.HBMModeTileService"
+            android:name="org.lineageos.device.DeviceSettings.HBMModeTileService"
             android:icon="@drawable/ic_hbm_mode"
             android:label="@string/tile_hbm_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -107,15 +107,15 @@
         </service>
 
         <!-- HBM Service -->
-        <service android:name="com.revengeos.device.DeviceSettings.HBMModeService"
+        <service android:name="org.lineageos.device.DeviceSettings.HBMModeService"
             android:exported="false" />
 
         <!-- Auto HBM Service -->
-        <service android:name="com.revengeos.device.DeviceSettings.AutoHBMService"
+        <service android:name="org.lineageos.device.DeviceSettings.AutoHBMService"
 		 android:exported="false" />
 
         <!-- FPS Info Service -->
-        <service android:name="com.revengeos.device.DeviceSettings.FPSInfoService"
+        <service android:name="org.lineageos.device.DeviceSettings.FPSInfoService"
                 android:exported="false">
         </service>
 
@@ -133,7 +133,7 @@
 
         <!-- Log Tile -->
         <service
-            android:name="com.revengeos.device.DeviceSettings.LogTile"
+            android:name="org.lineageos.device.DeviceSettings.LogTile"
             android:icon="@drawable/ic_logtile"
             android:label="@string/quick_settings_log_tile_label"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -146,7 +146,7 @@
         <!-- Search Indexing -->
         <provider
             android:name=".ConfigPanelSearchIndexablesProvider"
-            android:authorities="com.revengeos.device"
+            android:authorities="org.lineageos.device"
             android:multiprocess="false"
             android:grantUriPermissions="true"
             android:permission="android.permission.READ_SEARCH_INDEXABLES"
